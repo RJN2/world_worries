@@ -2,6 +2,10 @@
   "name": "world-worries",
   "version": "0.0.1",
   "dependencies": {
+    "babel-eslint": "^6.0.5",
+    "datamaps": "^0.5.7",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-react": "^6.2.2",
     "jquery": "~2.2.0",
     "normalize.css": "~3.0.3"
   },
@@ -47,7 +51,7 @@
     "gulp-newer": "~1.1.0",
     "js-yaml": "~3.5.2",
     "watchify": "~3.7.0 ",
-    "browserify" : "~13.0.1",
+    "browserify": "~13.0.1",
     "karma": "~0.13.19",
     "karma-browserify": "~4.4.2",
     "karma-phantomjs-launcher": "~0.2.3",
@@ -56,20 +60,18 @@
     "jasmine-core": "2.4.1"
   },
   "scripts": {
-    "clean-deps": "rimraf node_modules"
+    "clean-deps": "rimraf node_modules",
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
   },
   "engines": {
     "node": ">=0.12.0"
   },
   "//": "CUSTOM CONFIGURATION",
   "config": {
-    "//": "Local Server Settings",
+    "//": "Entry files",
     "host": "127.0.0.1",
     "port": "3000",
     "baseUrl": "./",
-    "//": "Gulp Task Directories",
-    "//": "NOTE: folders prefixed with an underscore (_) will have it removed when moved to build target (ex: src/_images -> build/images)",
-    "//": "NOTE: folders NOT prefixed with underscore (_) will be copied to build target 1 to 1 (ex: src/fonts -> build/fonts)",
     "directories": {
       "source": "src",
       "destination": "build",
@@ -82,7 +84,6 @@
       "scripts": "_scripts",
       "data": "_data"
     },
-    "//": "Entry files",
     "entries": {
       "js": "main**.js",
       "css": "main**.{sass,scss}"
