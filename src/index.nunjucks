@@ -3,10 +3,8 @@
 {% import "_modules/link/link.nunjucks" as link %}
 
 {% block content %}
-  <div class="container">
-      <div class="row">
-        <div class="col-xl" id="globalMap">
-        </div>
-      </div>
+  <div class="container" id="globalMap">
+
+
   </div>
 {% endblock %}
