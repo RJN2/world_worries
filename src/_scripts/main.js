@@ -5,9 +5,9 @@
 
 import $ from 'jquery';
 import Link from '../_modules/link/link';
-import * as d3 from 'd3';
-import * as dataMap from 'datamaps';
+import Datamap from 'datamaps';
 
 $(() => {
   new Link(); // Activate Link modules logic
+  new Datamap({element: document.getElementById('globalMap')});
 });
