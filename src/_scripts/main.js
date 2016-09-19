@@ -9,5 +9,13 @@ import Datamap from 'datamaps';
 
 $(() => {
   new Link(); // Activate Link modules logic
-  new Datamap({element: document.getElementById('globalMap')});
+  new Datamap({
+    element: document.getElementById('globalMap'),
+    fills: {
+      defaultFill: 'rgba(255,255,255,1.0)'
+    },
+    geographyConfig: {
+      borderColor: 'rgba(0,0,0,1.0)'
+    }
+  });
 });

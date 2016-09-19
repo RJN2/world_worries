@@ -50,6 +50,14 @@ $bg: #1e1e1e;
   text-align: center;
 }
 
+html,
 body {
   background: $bg;
+  height: 100%;
+  min-height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+  min-height: 100%;
 }

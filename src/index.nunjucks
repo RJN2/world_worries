@@ -3,8 +3,7 @@
 {% import "_modules/link/link.nunjucks" as link %}
 
 {% block content %}
-  <div class="container" id="globalMap">
-
-
+  <div class="container-fluid" id="globalMap">
+    
   </div>
 {% endblock %}
