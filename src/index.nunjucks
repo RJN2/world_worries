@@ -3,7 +3,21 @@
 {% import "_modules/link/link.nunjucks" as link %}
 
 {% block content %}
-  <div class="container-fluid" id="globalMap">
-    
+  <div class="container-fluid">
+    <div class="row header">
+    </div>
+    <div class="row main-container">
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-10" id="globalMap">
+
+      </div>
+      <div class="col-md-1">
+
+      </div>
+    </div>
+    <div class="row footer">
+    </div>
   </div>
 {% endblock %}
