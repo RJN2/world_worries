@@ -9,9 +9,11 @@ import Datamap from 'datamaps';
 
 $(() => {
   new Link(); // Activate Link modules logic
+
   new Datamap({
     element: document.getElementById('globalMap'),
-    height: $(this).parent().height(),
+    projection: 'mercator',
+    responsive: true,
     fills: {
       defaultFill: 'rgba(255,255,255,1.0)'
     },

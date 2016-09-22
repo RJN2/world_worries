@@ -10,8 +10,8 @@
       <div class="col-md-1">
 
       </div>
-      <div class="col-md-10" id="globalMap">
-
+      <div class="col-md-10">
+        <div class="content" id="globalMap"></div>
       </div>
       <div class="col-md-1">
 
